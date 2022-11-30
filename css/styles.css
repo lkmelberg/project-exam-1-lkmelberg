@@ -54,12 +54,13 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 30px;
+  padding: 10px 45px 0px 45px;
+  align-items: center;
 }
 
 /* logo  */
 .header_logo {
-  width: 200px;
+  width: 150px;
 }
 
 /* special menu items dt / mb  */
@@ -83,13 +84,13 @@ p {
 }
 
 /* menu  */
-menu {
-  position: relative;
-}
+
 nav {
   display: none;
   position: absolute;
-  right: 50px;
+  right: 0px;
+  background-color: #000;
+  padding: 10px 50px 10px 10px;
 }
 
 #hamburger-menu {
@@ -108,13 +109,13 @@ label i {
 
 nav ul li {
   display: block;
-  padding: 1vw;
+  padding: 3vw;
   padding-left: 0pt;
   text-align: right;
 }
 nav a {
   color: #bbddf2;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /* menu current  */
