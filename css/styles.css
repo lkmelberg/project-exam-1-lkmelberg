@@ -5,6 +5,8 @@
 */
 body {
   background-color: #f5b3b3;
+  margin: 0%;
+  padding: 0%;
 }
 header,
 footer {
@@ -15,10 +17,19 @@ h2 {
   font-family: "Abril Fatface", cursive;
 }
 
+/* test line  */
+/* .outline {
+  border: 1px solid red;
+} */
+
 h3,
 p,
-a {
+a,
+ul,
+li {
   font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 h1 {
@@ -38,12 +49,79 @@ p {
 }
 
 /* header   */
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 30px;
+}
 
 /* logo  */
+.header_logo {
+  width: 200px;
+}
+
+/* special menu items dt / mb  */
+.mb_menu_items {
+  display: none;
+}
+.dt_menu_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.dt_menu_items a {
+  font-family: "Abril Fatface", serif;
+  font-size: 2em;
+  text-decoration: none;
+  list-style: none;
+  color: #bbddf2;
+  padding: 1vw;
+  margin: 1em;
+  border-top: 1px solid #f5b3b3;
+}
 
 /* menu  */
+menu {
+  position: relative;
+}
+nav {
+  display: none;
+  position: absolute;
+  right: 50px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+label i {
+  font-size: 40px;
+  color: #fff4ec;
+  margin-left: 15px;
+}
 /* menu items  */
+
+nav ul li {
+  display: block;
+  padding: 1vw;
+  padding-left: 0pt;
+  text-align: right;
+}
+nav a {
+  color: #bbddf2;
+  font-size: 1.5em;
+}
+
 /* menu current  */
+.current a {
+  color: #f5b3b3;
+  border-bottom: 1px solid #fff4ec;
+}
 /* menu hover  */
 
 /* tagline  */
