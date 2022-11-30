@@ -1,0 +1,61 @@
+/* FYI
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Rubik', sans-serif;
+    weight: 400=regular 500=medium
+*/
+body {
+  background-color: #f5b3b3;
+}
+header,
+footer {
+  background-color: #000;
+}
+h1,
+h2 {
+  font-family: "Abril Fatface", cursive;
+}
+
+h3,
+p,
+a {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  /* size  */
+}
+
+h2 {
+  /* size  */
+}
+
+h3 {
+  /* size  */
+}
+
+p {
+  /* size  */
+}
+
+/* header   */
+
+/* logo  */
+
+/* menu  */
+/* menu items  */
+/* menu current  */
+/* menu hover  */
+
+/* tagline  */
+
+/* h1  */
+
+/* line  */
+
+/* footer  */
+
+/* footer links  */
+
+/* logo */
+
+/* buttons  */
