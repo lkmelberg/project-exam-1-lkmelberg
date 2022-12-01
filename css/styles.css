@@ -180,8 +180,9 @@ nav a {
 
 .images {
   max-width: 120%;
+  width: 100%;
+  height: auto !important;
   margin: 1em;
-  max-height: min-content;
 }
 
 /* footer  */
