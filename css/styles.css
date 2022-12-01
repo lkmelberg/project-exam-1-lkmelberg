@@ -3,10 +3,15 @@
     font-family: 'Rubik', sans-serif;
     weight: 400=regular 500=medium
 */
+
+/* fonts/ basic styles and such  */
 body {
   background-color: #f5b3b3;
   margin: 0%;
   padding: 0%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 header,
 footer {
@@ -33,7 +38,7 @@ li {
 }
 
 h1 {
-  /* size  */
+  font-size: 3em;
 }
 
 h2 {
@@ -45,7 +50,7 @@ h3 {
 }
 
 p {
-  /* size  */
+  font-weight: 300;
 }
 
 /* header   */
@@ -54,13 +59,13 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 10px 45px 0px 45px;
+  padding: 10px 40px 0px 40px;
   align-items: center;
 }
 
 /* logo  */
 .header_logo {
-  width: 150px;
+  width: 7rem;
 }
 
 /* special menu items dt / mb  */
@@ -78,8 +83,8 @@ p {
   text-decoration: none;
   list-style: none;
   color: #bbddf2;
-  padding: 1vw;
-  margin: 1em;
+  padding: 0.5vw;
+  margin: 0.5em 2.5em 0.5em 1.5em;
   border-top: 1px solid #f5b3b3;
 }
 
@@ -126,15 +131,102 @@ nav a {
 /* menu hover  */
 
 /* tagline  */
+.tagline {
+  background-color: #000;
+  border-top: 2px solid #f5b3b3;
+  padding: 0.8em 0em;
+  display: flex;
+  justify-content: center;
+}
+.tagline a {
+  color: #bbddf2;
+}
+
+/* breadcrumb */
+.breadcrumb ul li {
+  display: inline;
+}
+.SSbreadcrumb {
+  display: inline;
+}
+.breadcrumb a {
+  color: #182940;
+  font-size: 0.8em;
+}
 
 /* h1  */
+.headTitle {
+  display: flex;
+  justify-content: center;
+  color: #182940;
+}
+.pageTitle {
+  padding-bottom: 1rem;
+  border-bottom: 3px #182940 solid;
+}
 
-/* line  */
+/* content global */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 20em 5em 20em;
+}
+
+.content p {
+  font-size: 1.3em;
+}
+
+.images {
+  max-width: 120%;
+  margin: 1em;
+}
 
 /* footer  */
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 40px 0px 40px;
+  align-items: center;
+  color: #bbddf2;
+  position: fixed;
+  bottom: 0;
+}
+.footer a {
+  color: #bbddf2;
+  font-size: 0.8em;
+}
+.footer ul {
+  padding: 0%;
+}
 
 /* footer links  */
+.footerLinks ul a {
+  display: block;
+  padding: 0.5vw;
+  padding-left: 0pt;
+}
+/* footer logo */
+.footer_logo {
+  width: 15em;
+}
 
-/* logo */
+/* footer socials */
+.footerSocials ul a {
+  display: block;
+  padding: 0.5vw;
+  padding-left: 0pt;
+  text-align: right;
+}
+
+/* footer copyright  */
+.footerCopyr {
+  display: flex;
+  flex-basis: 100%;
+  align-self: center;
+  justify-content: center;
+}
 
 /* buttons  */

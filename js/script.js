@@ -9,7 +9,94 @@
 //     <footer class="footer"></footer>
 
 const header = document.querySelector(".header");
+const tagline = document.querySelector(".tagline");
+const breadcrumb = document.querySelector(".breadcrumb");
 
-// break into smaller pieces? why is formatting fucked?
-header.innerHTML +=
-  '<a href="index.html"><img src="../img/glitchIntel_logo.png" alt = "Glitch Intel logo" class="header_logo "></a>                        <div class="dt_menu_items ">                         <a href="login.html">LOG IN</a>                     <a href="register.html">REGISTER</a>                </div>                                              <div class="menu ">                            <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label><input type="checkbox" id="hamburger-menu" /> <nav class="menu_items"> <ul>                                               <li><a href="index.html">HOME</a></li>          <li><a href="posts.html">ALL POSTS</a></li> <li><a href="about.html">ABOUT US</a></li>     <li><a href="contact.html">CONTACT US</a></li>  <li class="mb_menu_items"><a href="login.html">LOG IN</a></li>  <li class="mb_menu_items"><a href="register.html">REGISTER</a></li></ul>    </nav> </div>';
+const headTitle = document.querySelector(".headTitle");
+const line = document.querySelector(".line");
+
+const content = document.querySelector(".content");
+
+const footer = document.querySelector(".footer");
+
+// Header
+// break into smaller pieces?
+header.innerHTML += `
+        <a href="index.html"><img src="img/glitchIntel_logo.png" alt="Glitch Intel logo" class="header_logo "></a>
+        <div class="dt_menu_items ">
+            <a href="login.html">LOG IN</a>
+            <a href="register.html">REGISTER</a>
+        </div>
+        <div class="menu ">
+            <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav class="menu_items">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="posts.html">ALL POSTS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li class="mb_menu_items"><a href="login.html">LOG IN</a></li>
+                    <li class="mb_menu_items"><a href="register.html">REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>`;
+
+// tagline
+tagline.innerHTML += `
+<a href="index.html">The Latest And Greatest In E-Sports News</a>`;
+
+// breadcrumb
+breadcrumb.innerHTML += `
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>-></li>
+    <div class="SSbreadcrumb"></div>
+  </ul>`;
+
+const SSbreadcrumb = document.querySelector(".SSbreadcrumb");
+
+// head title
+headTitle.innerHTML += `<h1 class="pageTitle"></h1>`;
+
+const pageTitle = document.querySelector(".pageTitle");
+
+// footer
+footer.innerHTML += `
+        <div class="footerLinks"> </div>
+        <div class="footerLogo"> </div>
+        <div class=" footerSocials"></div>
+        <div class=" footerCopyr"></div>`;
+
+const footerLinks = document.querySelector(".footerLinks");
+const footerLogo = document.querySelector(".footerLogo");
+const footerSocials = document.querySelector(".footerSocials");
+const footerCopyr = document.querySelector(".footerCopyr");
+
+// footer links
+footerLinks.innerHTML = `
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="dummy.html">Cookies And Privacy</a></li>
+                <li><a href="dummy.html">Terms And Conditions</a></li>
+              </ul>`;
+
+// footer logo
+footerLogo.innerHTML = `
+            <a href="index.html"><img src="img/glitchIntel_logo.png" alt="Glitch Intel logo" class="footer_logo "></a>
+`;
+
+// footer socials
+footerSocials.innerHTML = `
+              <ul>
+                <li><a href="dummy.html">Twitter</a></li>
+                <li><a href="dummy.html">Youtube</a></li>
+                <li><a href="dummy.html">TikTok</a></li>
+                <li><a href="dummy.html">Facebook</a></li>
+                <li><a href="dummy.html">instagram</a></li>
+              </ul>`;
+
+// footer copyright
+footerCopyr.innerHTML = `<p>© Copyright 2022 Glitch Intel LTD</p>`;
