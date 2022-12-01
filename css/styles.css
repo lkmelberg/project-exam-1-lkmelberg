@@ -181,7 +181,7 @@ nav a {
 .images {
   max-width: 120%;
   margin: 1em;
-  height: auto !important;
+  height: fit-content;
 }
 
 /* footer  */
