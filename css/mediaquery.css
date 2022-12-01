@@ -3,6 +3,10 @@
   .content {
     padding: 1em 15em 5em 15em;
   }
+  .images {
+    width: 100%;
+    max-height: 20rem;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -53,6 +57,10 @@
   /* content  */
   .content p {
     font-size: 1em;
+  }
+
+  .images {
+    max-height: 12rem;
   }
 
   /* footer  */
