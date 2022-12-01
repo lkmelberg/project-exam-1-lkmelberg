@@ -12,7 +12,12 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  min-height: 100vh;
 }
+main {
+  flex: 1;
+}
+
 header,
 footer {
   background-color: #000;
@@ -191,8 +196,6 @@ nav a {
   padding: 10px 40px 0px 40px;
   align-items: center;
   color: #bbddf2;
-  position: fixed;
-  bottom: 0;
 }
 .footer a {
   color: #bbddf2;
