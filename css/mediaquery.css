@@ -55,6 +55,9 @@
   }
 
   /* content  */
+  .content {
+    padding: 1em 3em 1em 3em;
+  }
   .content p {
     font-size: 1em;
   }
