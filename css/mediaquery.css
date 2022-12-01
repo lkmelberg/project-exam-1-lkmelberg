@@ -3,9 +3,6 @@
   .content {
     padding: 1em 15em 5em 15em;
   }
-  .images {
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 950px) {
@@ -45,10 +42,8 @@
   .content {
     padding: 1em 5em 2em 5em;
   }
-  .images {
-    max-width: 110%;
-  }
 }
+
 @media screen and (max-width: 550px) {
   /* basic  */
   h1 {

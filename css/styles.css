@@ -179,9 +179,8 @@ nav a {
 }
 
 .images {
-  max-width: 120%;
   width: 100%;
-  height: auto !important;
+  max-height: 100%;
   margin: 1em;
 }
 
