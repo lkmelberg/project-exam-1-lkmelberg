@@ -1,4 +1,4 @@
-SSbreadcrumb.innerHTML += `<li><a href="contacf.html">Contact</a></li>`;
+SSbreadcrumb.innerHTML += `<li><a href="contact.html">Contact</a></li>`;
 pageTitle.innerHTML += `Contact Us`;
 
 // form
@@ -19,13 +19,13 @@ const contactMessage = document.querySelector(".contact-message");
 function checkIfInputValidated(event) {
   event.preventDefault();
 
-  if (checkLength(theName.value, 1)) {
+  if (checkLength(theName.value, 5)) {
     theNameError.style.display = "none";
   } else {
     theNameError.style.display = "block";
   }
 
-  if (checkLength(message.value, 10)) {
+  if (checkLength(message.value, 25)) {
     messageError.style.display = "none";
   } else {
     messageError.style.display = "block";
@@ -41,22 +41,22 @@ function checkIfInputValidated(event) {
   } else {
     emailError.style.display = "block";
   }
-  if (checkLength(subject.value, 1)) {
+  if (checkLength(subject.value, 15)) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
   }
 
   if (
-    checkLength(theName.value, 1) &&
-    checkLength(message.value, 10) &&
-    checkLength(subject.value, 1) &&
+    checkLength(theName.value, 5) &&
+    checkLength(message.value, 25) &&
+    checkLength(subject.value, 15) &&
     // checkMaxLength(message.value, 100) &&
     checkLength(email.value, 1) &&
     validateEmail(email.value)
   ) {
     contactMessage.innerHTML =
-      '<div class="contact-message-success">Your message has been sent</div>';
+      '<div class="contact-message-success">Your message has been submitted</div>';
     form.reset();
   } else {
   }
@@ -85,6 +85,8 @@ function validateEmail(email) {
   const patternMatches = regEx.test(email);
   return patternMatches;
 }
+
+// keep content in html file
 
 // content.innerHTML += `<div class="contact_main_form contact-message"></div>
 //             <form>

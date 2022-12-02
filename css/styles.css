@@ -229,3 +229,14 @@ nav a {
 }
 
 /* buttons  */
+
+.button {
+  color: #bbddf2;
+  background-color: #182940;
+  border: none;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  border-radius: 0.5rem;
+  padding: 0.5rem 3rem;
+  max-width: fit-content;
+}

@@ -1,16 +1,97 @@
 main {
   height: 100vh;
 }
+
+/* messages  */
 .contact-message-success {
   background: green;
   padding: 1rem;
   color: white;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
 }
 .form-error {
   display: none;
-  color: red;
-  font-size: 0.9rem;
+  background: #bbddf2;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  width: fit-content;
+  color: #990000;
+  font-size: 1rem;
   margin-top: 2px;
+  font-family: "Rubik", sans-serif;
+}
+
+/* form  */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.item_form {
+  display: block;
+  width: 12rem;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.contact_form_message_input {
+  width: 20rem;
+}
+label {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+/* mediaquery  */
+
+@media screen and (max-width: 1200px) {
+  label,
+  .contact-message-success,
+  .form-error {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  label,
+  .contact-message-success,
+  .form-error {
+    font-size: 0.8rem;
+  }
+  .item_form {
+    width: 10rem;
+    margin: 0.3rem 0.5rem 0.6rem 0.5rem;
+  }
+  .contact_form_message_input {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  label,
+  .contact-message-success,
+  .form-error {
+    font-size: 0.7rem;
+  }
+  .item_form {
+    width: 8rem;
+  }
+  .contact_form_message_input {
+    width: 11rem;
+  }
+  @media screen and (max-width: 220px) {
+    label,
+    .contact-message-success,
+    .form-error {
+      font-size: 0.6rem;
+    }
+    .item_form {
+      width: 7rem;
+    }
+    .contact_form_message_input {
+      width: 8rem;
+    }
+  }
 }

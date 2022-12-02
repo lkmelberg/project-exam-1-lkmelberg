@@ -7,6 +7,10 @@
     width: 100%;
     max-height: 20rem;
   }
+
+  .button {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -83,6 +87,10 @@
   .footer_logo {
     display: none;
   }
+  /* button  */
+  .button {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -129,10 +137,18 @@
   footer p {
     font-size: 0.5em;
   }
+  /* button  */
+  .button {
+    font-size: 1em;
+    padding: 0.5rem 2rem;
+  }
 }
 
 @media screen and (max-width: 220px) {
   .tagline a {
     font-size: 0.4em;
+  }
+  .button {
+    font-size: 0.9em;
   }
 }
