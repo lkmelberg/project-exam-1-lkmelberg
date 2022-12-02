@@ -3,6 +3,8 @@ SSbreadcrumb.innerHTML += `<li><a href="posts.html">All News Updates</a></li>
                             <li>-></li>
                            `;
 const postSpesificTitle = document.querySelector("title");
+const modal = document.querySelector(".modal");
+const clickable = document.querySelector(".wp-image-27");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -28,23 +30,17 @@ async function getPost() {
     SSbreadcrumb.innerHTML += ` <li><a href="post.html?id=${id}">${data.title.rendered}</a></li>`;
     postSpesificTitle.innerHTML = `${data.title.rendered}`;
     pageTitle.innerHTML += `${data.title.rendered}`;
+    const imagePost =
+      data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
     content.innerHTML += `
-      <div class="postContent">${data.content.rendered}</div>`;
+      <div onclick="myFunction()" class="postContent">${data.content.rendered}</div>`;
 
     const author = document.querySelector(".wp-block-post-author__name");
     author.innerHTML = `<h3>Author: ${data._embedded["author"][0].name}</h3>`;
-    // content.innerHTML += `<div class="post">
-    //                                   <div class="postInfo">
-    //                                   <p class"author"> Name: ${data.name}</p>
-    //                                   <p class"date"> Name: ${data.name}</p>
-    //                                   </div>
-    //                                   <div class="details-image"
-    //                                 style="background-image: url('${data.image}')"></div>
-    //                                  <p class="details status">Status: ${data.status}</p>
-    //                                   <p class="details species">Species: ${data.species}</p>
-    //                                   <p class="details origin">Origin: ${data.origin.name}</p>
-    //                                </div>`;
+
+    modal.innerHTML = `<div onclick="close()" class="esc">&times;</div><img onclick="close()" class="postImage" src="${imagePost}" alt=" post image"> `;
+
     console.log("Success");
     const loader = document.querySelector(".loader");
     loader.classList.add("hide");
@@ -56,3 +52,12 @@ async function getPost() {
   }
 }
 getPost();
+
+function myFunction() {
+  console.log("yo");
+  document.querySelector(".modal").classList.add("show");
+}
+function close() {
+  console.log("yo2");
+  document.querySelector(".modal").classList.remove("show");
+}
