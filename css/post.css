@@ -34,7 +34,27 @@ figure {
   opacity: 0.8;
 }
 
-/* modal  */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+/* modal 
 .modal {
   display: none;
   position: fixed;
