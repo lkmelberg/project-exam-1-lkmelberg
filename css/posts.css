@@ -1,0 +1,52 @@
+.sortFilter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sort,
+.filter {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em;
+}
+
+.content {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.postItem {
+  background-size: cover;
+  height: 30rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  color: #bbddf2;
+  margin: 1.5rem;
+}
+
+.itemButton {
+  background-image: none;
+  justify-content: center;
+}
+
+.overlay {
+  border-radius: 0.5rem 0.5rem;
+  background-color: rgba(24, 41, 64, 0.9);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+.overlay p {
+  font-weight: 500;
+}
