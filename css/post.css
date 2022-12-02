@@ -1,0 +1,17 @@
+.headTitle {
+  font-size: 1em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #182940;
+}
+
+p {
+  font-weight: 300;
+}
+.wp-block-image img {
+  max-width: 50rem;
+  max-height: 30rem;
+}

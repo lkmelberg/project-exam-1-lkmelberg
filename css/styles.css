@@ -243,3 +243,10 @@ nav a {
   padding: 0.5rem 3rem;
   max-width: fit-content;
 }
+
+/* hide  */
+.hide,
+.wp-block-post-author__avatar,
+.wp-block-post-author__byline {
+  display: none;
+}
