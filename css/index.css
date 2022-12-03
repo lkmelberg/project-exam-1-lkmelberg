@@ -185,7 +185,7 @@ h4 {
     width: 35rem;
   }
   h1 {
-    margin: 1rem 0rem;
+    margin: 1rem;
   }
   h3 {
     font-size: 1rem;
@@ -261,5 +261,18 @@ h4 {
   }
   .daily {
     width: 18rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  .carouselLink {
+    max-width: 10rem;
+  }
+  .daily {
+    width: 15rem;
   }
 }
