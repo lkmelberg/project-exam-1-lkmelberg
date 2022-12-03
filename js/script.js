@@ -20,7 +20,6 @@ const content = document.querySelector(".content");
 const footer = document.querySelector(".footer");
 
 // Header
-// break into smaller pieces?
 header.innerHTML += `
         <a href="index.html"><img src="img/glitchIntel_logo.png" alt="Glitch Intel logo" class="header_logo "></a>
         <div class="dt_menu_items ">

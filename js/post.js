@@ -30,6 +30,7 @@ async function getPost() {
     SSbreadcrumb.innerHTML += ` <li><a href="post.html?id=${id}">${data.title.rendered}</a></li>`;
     postSpesificTitle.innerHTML = `${data.title.rendered}`;
     pageTitle.innerHTML += `${data.title.rendered}`;
+
     const imagePost =
       data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
@@ -58,14 +59,6 @@ async function getPost() {
   }
 }
 getPost();
-
-// document.querySelectorAll("img").forEach((img) => {
-//   img.addEventListener("click", (e) => {
-//     document.querySelector(".lightbox").classList.add("active");
-//     document.querySelector("#lightbox-figure img").src = e.target.src;
-//     document.querySelector("#lightbox-caption").innerHTML = e.target.alt;
-//   });
-// });
 
 function myFunction() {
   console.log("yo check check");

@@ -2,11 +2,10 @@ SSbreadcrumb.innerHTML += `<li><a href="posts.html">All News Updates</a></li>`;
 pageTitle.innerHTML += `All News Updates`;
 
 const current = document.querySelector(".posts");
-
-current.classList.add("current");
-
 const viewMore = document.querySelector(".viewMore");
 const loader = document.querySelector(".loader");
+
+current.classList.add("current");
 
 // 10 posts
 const url = "https://flowpow.pro/glitch/wp-json/wp/v2/posts?_embed";
