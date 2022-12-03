@@ -1,4 +1,3 @@
-// remeber to fix this
 SSbreadcrumb.innerHTML += `<li><a href="posts.html">All News Updates</a></li>
                             <li>-></li>
                            `;
