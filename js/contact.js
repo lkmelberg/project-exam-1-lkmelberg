@@ -1,5 +1,8 @@
 SSbreadcrumb.innerHTML += `<li><a href="contact.html">Contact</a></li>`;
 pageTitle.innerHTML += `Contact Us`;
+const current = document.querySelector(".contact");
+
+current.classList.add("current");
 
 // form
 

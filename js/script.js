@@ -24,20 +24,20 @@ const footer = document.querySelector(".footer");
 header.innerHTML += `
         <a href="index.html"><img src="img/glitchIntel_logo.png" alt="Glitch Intel logo" class="header_logo "></a>
         <div class="dt_menu_items ">
-            <a href="login.html">LOG IN</a>
-            <a href="register.html">REGISTER</a>
+            <a href="dummy.html">LOG IN</a>
+            <a href="dummy.html">REGISTER</a>
         </div>
         <div class="menu ">
             <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu" />
             <nav class="menu_items">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="posts.html">ALL POSTS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li class="mb_menu_items"><a href="login.html">LOG IN</a></li>
-                    <li class="mb_menu_items"><a href="register.html">REGISTER</a></li>
+                    <li class="home"><a href="index.html">HOME</a></li>
+                    <li class="posts"><a href="posts.html">ALL POSTS</a></li>
+                    <li class="about"><a href="about.html">ABOUT US</a></li>
+                    <li class="contact"><a href="contact.html">CONTACT US</a></li>
+                    <li class="mb_menu_items"><a href="dummy.html">LOG IN</a></li>
+                    <li class="mb_menu_items"><a href="dummy.html">REGISTER</a></li>
                 </ul>
             </nav>
         </div>`;

@@ -1,6 +1,9 @@
 breadcrumb.innerHTML = ``;
 pageTitle.innerHTML += `Story Of The Day:`;
 const loader = document.querySelector(".loader");
+const current = document.querySelector(".home");
+
+current.classList.add("current");
 
 const url =
   "https://flowpow.pro/glitch/wp-json/wp/v2/posts?_embed&per_page=100";
