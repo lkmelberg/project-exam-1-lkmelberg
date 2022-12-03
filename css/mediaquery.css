@@ -90,6 +90,11 @@
     font-size: 1em;
   }
 }
+@media screen and (max-width: 400px) {
+  .content {
+    padding: 0rem;
+  }
+}
 
 @media screen and (max-width: 350px) {
   /* basic  */

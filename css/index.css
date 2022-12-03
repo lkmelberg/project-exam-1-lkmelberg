@@ -241,22 +241,25 @@ h4 {
   }
 
   .carouselLink {
-    max-width: 10rem;
+    max-width: 15rem;
   }
   .daily {
-    width: 15rem;
+    width: 20rem;
+  }
+  .content {
+    padding: 0rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
   h2 {
     font-size: 1rem;
   }
 
   .carouselLink {
-    max-width: 8rem;
+    max-width: 12rem;
   }
   .daily {
-    width: 10rem;
+    width: 18rem;
   }
 }
