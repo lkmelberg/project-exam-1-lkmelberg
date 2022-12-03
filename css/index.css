@@ -41,12 +41,6 @@ h2 {
   margin-bottom: 0;
 }
 
-h4 {
-  margin-bottom: 0;
-  align-self: flex-start;
-  padding-left: 25%;
-}
-
 /* carousel */
 .caruselContainer {
   max-width: 70rem;
@@ -139,18 +133,6 @@ h4 {
   flex-wrap: nowrap;
   align-items: center;
   margin: 2rem 0rem 4rem 0rem;
-}
-
-@media screen and (max-width: 1900px) {
-  h4 {
-    padding-left: 15vw;
-  }
-}
-
-@media screen and (max-width: 1700px) {
-  h4 {
-    padding-left: 10vw;
-  }
 }
 
 @media screen and (max-width: 1500px) {
