@@ -1,5 +1,5 @@
 .content {
-  padding: 3rem 3rem;
+  padding: 0rem 3rem 2rem 3rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@
   justify-content: center;
   color: #bbddf2;
   background-color: #182940;
-  margin: 1.5rem;
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
   padding: 1rem;
 }
 .dailyImage {
@@ -29,4 +29,15 @@
   border-radius: 0.5rem;
   max-height: 250px;
   object-fit: cover;
+}
+h2 {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.vAll {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
