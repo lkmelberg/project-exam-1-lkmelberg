@@ -217,8 +217,15 @@ nav a {
   padding-left: 0pt;
 }
 /* footer logo */
-.footer_logo {
-  width: 15em;
+.footerMsg {
+  font-size: 2em;
+  font-weight: 300;
+}
+.footerMsg a:hover {
+  color: #f5b3b3;
+}
+.footerMsg:hover {
+  border-bottom: 1px solid #f5b3b3;
 }
 
 /* footer socials */

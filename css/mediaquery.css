@@ -35,11 +35,6 @@
     padding-bottom: 15px;
     padding-top: 15px;
   }
-
-  /* footer  */
-  .footer_logo {
-    width: 10em;
-  }
 }
 
 @media screen and (max-width: 750px) {
@@ -57,6 +52,10 @@
   /* content  */
   .content {
     padding: 1em 5em 2em 5em;
+  }
+  /* footer  */
+  .footerMsg {
+    display: none;
   }
 }
 
@@ -86,10 +85,6 @@
     max-height: 12rem;
   }
 
-  /* footer  */
-  .footer_logo {
-    display: none;
-  }
   /* button  */
   .button {
     font-size: 1em;

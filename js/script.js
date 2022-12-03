@@ -64,12 +64,12 @@ const pageTitle = document.querySelector(".pageTitle");
 // footer
 footer.innerHTML += `
         <div class="footerLinks"> </div>
-        <div class="footerLogo"> </div>
+        <div class="footerMsg"> </div>
         <div class=" footerSocials"></div>
         <div class=" footerCopyr"></div>`;
 
 const footerLinks = document.querySelector(".footerLinks");
-const footerLogo = document.querySelector(".footerLogo");
+const footerMsg = document.querySelector(".footerMsg");
 const footerSocials = document.querySelector(".footerSocials");
 const footerCopyr = document.querySelector(".footerCopyr");
 
@@ -83,9 +83,9 @@ footerLinks.innerHTML = `
                 <li><a href="dummy.html">Terms And Conditions</a></li>
               </ul>`;
 
-// footer logo
-footerLogo.innerHTML = `
-            <a href="index.html"><img src="img/glitchIntel_logo.png" alt="Glitch Intel logo" class="footer_logo "></a>
+// footer message
+footerMsg.innerHTML = `
+            <a href="contact.html"><p class="got" >Got intel? Message Us!</p></a>
 `;
 
 // footer socials
