@@ -35,9 +35,228 @@ h2 {
   margin-bottom: 0;
 }
 
+h4 {
+  margin-bottom: 0;
+  align-self: flex-start;
+  padding-left: 25%;
+}
+
+/* carousel */
+.caruselContainer {
+  max-width: 70rem;
+  margin: 0rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.slideContainer {
+  /* height: calc(100vh - 2rem); */
+  max-width: 100%;
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #bbddf2; /*fallback*/
+  background-color: rgba(187, 221, 242, 0.3);
+}
+
+.slideArrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 8rem;
+  background-color: #182940;
+  color: #bbddf2;
+  border: none;
+  width: 2rem;
+  font-size: 4rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 100ms;
+}
+
+.slideArrow:hover {
+  opacity: 1;
+}
+
+.previous {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.carouselItem {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* images each slide */
+.carouselLink {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: #bbddf2;
+  background-color: #182940;
+  margin: 1rem 2rem;
+  padding: 1rem;
+}
+
+.carouselImage {
+  max-width: 100%;
+  border: 2px solid #bbddf2;
+  border-radius: 0.5rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
 .vAll {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  margin: 2rem 0rem 4rem 0rem;
+}
+
+@media screen and (max-width: 1900px) {
+  h4 {
+    padding-left: 15vw;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  h4 {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  h4 {
+    padding-left: 0;
+    align-self: center;
+  }
+  .caruselContainer {
+    max-width: 60rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .caruselContainer {
+    max-width: 50rem;
+  }
+  .carouselLink {
+    margin: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .caruselContainer {
+    max-width: 40rem;
+  }
+  .carouselImage {
+    height: 10rem;
+  }
+  .daily {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .caruselContainer {
+    max-width: 35rem;
+  }
+  .daily {
+    width: 35rem;
+  }
+  h1 {
+    margin: 1rem 0rem;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .slide2,
+  .slide3,
+  .slide4,
+  .slide5,
+  .slideArrow {
+    display: none;
+  }
+  .slide1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .carouselImage {
+    height: 10rem;
+    width: 15rem;
+    align-self: center;
+  }
+
+  .carouselLink {
+    max-width: 20rem;
+  }
+  .daily {
+    width: 25rem;
+  }
+  h3 {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carouselLink {
+    max-width: 15rem;
+  }
+  .daily {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  .carouselLink {
+    max-width: 10rem;
+  }
+  .daily {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  .carouselLink {
+    max-width: 8rem;
+  }
+  .daily {
+    width: 10rem;
+  }
 }

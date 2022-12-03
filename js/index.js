@@ -18,6 +18,7 @@ async function fetchHomePosts() {
     // Content containers
     content.innerHTML += `
       <div class="daily"></div>
+      <h4>Newest Updates:</h4>
       <div class="caruselContainer newest"></div>`;
 
     const daily = document.querySelector(".daily");
@@ -33,14 +34,22 @@ async function fetchHomePosts() {
                     <h2>${Hposts[7].title.rendered}</h2>
                 </a>`;
 
-    //   carusel
+    //   carousel
     //   make slide divs
     caruselContainer.innerHTML += `
-         <div class="slide1"></div>
-                <div class="slide2"></div>
-                <div class="slide3"></div>
-                <div class="slide4"></div>
-                <div class="slide5"></div>`;
+    <button class="slideArrow previous">
+    &#8249;
+  </button>
+  <button class="slideArrow next">
+    &#8250;
+  </button>
+  <div class="slideContainer">
+        <div class="carouselItem slide1"></div>
+        <div class="carouselItem slide2"></div>
+        <div class="carouselItem slide3"></div>
+        <div class="carouselItem slide4"></div>
+        <div class="carouselItem slide5"></div>
+    </div>          `;
 
     //   content for slide 1
     const slide1G = Hposts.slice(0, 3);
@@ -53,12 +62,12 @@ async function fetchHomePosts() {
         post._embedded["wp:featuredmedia"][0].media_details.sizes.full
           .source_url;
       slide1.innerHTML += `
-           <div class="carouselItem">
+           
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}"</h3>
+              <h3>${title}</h3>
          </a>
-        </div>
+        
           `;
     });
 
@@ -73,12 +82,12 @@ async function fetchHomePosts() {
         post._embedded["wp:featuredmedia"][0].media_details.sizes.full
           .source_url;
       slide2.innerHTML += `
-           <div class="carouselItem">
+           
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}"</h3>
+              <h3>${title}</h3>
          </a>
-        </div>
+       
           `;
     });
 
@@ -93,12 +102,12 @@ async function fetchHomePosts() {
         post._embedded["wp:featuredmedia"][0].media_details.sizes.full
           .source_url;
       slide3.innerHTML += `
-           <div class="carouselItem">
+           
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}"</h3>
+              <h3>${title}</h3>
          </a>
-        </div>
+     
           `;
     });
 
@@ -113,12 +122,12 @@ async function fetchHomePosts() {
         post._embedded["wp:featuredmedia"][0].media_details.sizes.full
           .source_url;
       slide4.innerHTML += `
-           <div class="carouselItem">
+           
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}"</h3>
+              <h3>${title}</h3>
          </a>
-        </div>
+      
           `;
     });
 
@@ -133,13 +142,29 @@ async function fetchHomePosts() {
         post._embedded["wp:featuredmedia"][0].media_details.sizes.full
           .source_url;
       slide5.innerHTML += `
-           <div class="carouselItem">
+           
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}"</h3>
+              <h3>${title}</h3>
          </a>
-        </div>
+       
           `;
+    });
+
+    //   JS for carousel
+    const slidesContainer = document.querySelector(".slideContainer");
+    const carouselItem = document.querySelector(".carouselItem");
+    const prevButton = document.querySelector(".previous");
+    const nextButton = document.querySelector(".next");
+
+    nextButton.addEventListener("click", () => {
+      const slideWidth = carouselItem.clientWidth;
+      slidesContainer.scrollLeft += slideWidth;
+    });
+
+    prevButton.addEventListener("click", () => {
+      const slideWidth = carouselItem.clientWidth;
+      slidesContainer.scrollLeft -= slideWidth;
     });
 
     console.log("Success");
