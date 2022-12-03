@@ -21,7 +21,7 @@ async function fetchHomePosts() {
     // Content containers
     content.innerHTML += `
       <div class="daily"></div>
-      <h2>Newest Updates:</h2>
+      <h3>Newest Updates:</h3>
       <div class="caruselContainer newest"></div>`;
 
     const daily = document.querySelector(".daily");
@@ -34,7 +34,7 @@ async function fetchHomePosts() {
 
     daily.innerHTML = `  <a href="post.html?id=${dailyId}" class="dailyLink">
                     <img class="dailyImage" src="${Hposts[7]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt=" post image">
-                    <h4>${Hposts[7].title.rendered}</h4>
+                    <h2>${Hposts[7].title.rendered}</h2>
                 </a>`;
 
     //   carousel
