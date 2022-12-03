@@ -1,0 +1,32 @@
+.content {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* story of the day  */
+.daily {
+  width: 50rem;
+}
+.dailyLink {
+  /* height: 20rem;
+  width: 18rem; */
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: #bbddf2;
+  background-color: #182940;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+.dailyImage {
+  max-width: 100%;
+  border: 2px solid #bbddf2;
+  border-radius: 0.5rem;
+  max-height: 250px;
+  object-fit: cover;
+}

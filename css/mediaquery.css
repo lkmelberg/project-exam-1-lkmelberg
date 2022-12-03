@@ -18,6 +18,9 @@
   .content {
     padding: 1em 10em 5em 10em;
   }
+  .modalimg {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 850px) {
