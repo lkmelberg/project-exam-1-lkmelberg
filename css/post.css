@@ -60,9 +60,6 @@ figure {
     font-size: 0.8em;
   }
 
-  h2 {
-    font-size: 1em;
-  }
   .wp-block-image img {
     max-width: 40rem;
     max-height: 25rem;
@@ -73,9 +70,6 @@ figure {
     font-size: 0.6em;
   }
 
-  h2 {
-    font-size: 0.9em;
-  }
   .wp-block-image img {
     max-width: 30rem;
     max-height: 20rem;
@@ -88,7 +82,7 @@ figure {
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 

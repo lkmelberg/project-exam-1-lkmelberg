@@ -40,8 +40,7 @@
 @media screen and (max-width: 750px) {
   /* basic  */
   h1 {
-    font-size: 2.5em;
-    margin: 0%;
+    margin: 1.2rem;
   }
 
   /* header  */
@@ -60,9 +59,9 @@
 }
 
 @media screen and (max-width: 550px) {
-  /* basic  */
   h1 {
-    font-size: 2em;
+    font-size: 3em;
+    margin: 1rem;
   }
 
   /* header  */
@@ -97,11 +96,6 @@
 }
 
 @media screen and (max-width: 350px) {
-  /* basic  */
-  h1 {
-    font-size: 1.8em;
-  }
-
   /* header  */
 
   .header_logo {
