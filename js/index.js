@@ -21,7 +21,7 @@ async function fetchHomePosts() {
     // Content containers
     content.innerHTML += `
       <div class="daily"></div>
-      <h4>Newest Updates:</h4>
+      <h2>Newest Updates:</h2>
       <div class="caruselContainer newest"></div>`;
 
     const daily = document.querySelector(".daily");
@@ -34,7 +34,7 @@ async function fetchHomePosts() {
 
     daily.innerHTML = `  <a href="post.html?id=${dailyId}" class="dailyLink">
                     <img class="dailyImage" src="${Hposts[7]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" alt=" post image">
-                    <h2>${Hposts[7].title.rendered}</h2>
+                    <h4>${Hposts[7].title.rendered}</h4>
                 </a>`;
 
     //   carousel
@@ -68,7 +68,7 @@ async function fetchHomePosts() {
            
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}</h3>
+              <h4>${title}</h4>
          </a>
         
           `;
@@ -88,7 +88,7 @@ async function fetchHomePosts() {
            
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}</h3>
+              <h4>${title}</h4>
          </a>
        
           `;
@@ -108,7 +108,7 @@ async function fetchHomePosts() {
            
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}</h3>
+              <h4>${title}</h4>
          </a>
      
           `;
@@ -128,7 +128,7 @@ async function fetchHomePosts() {
            
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}</h3>
+              <h4>${title}</h4>
          </a>
       
           `;
@@ -148,7 +148,7 @@ async function fetchHomePosts() {
            
          <a href="post.html?id=${post.id}" class="carouselLink">
                <img class="carouselImage" src="${image}" alt=" post image">
-              <h3>${title}</h3>
+              <h4>${title}</h4>
          </a>
        
           `;
