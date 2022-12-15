@@ -1,4 +1,4 @@
-# Semester Project 1 - Glitch Intel
+# Project Exam 1 - Glitch Intel
 
 The project was created to showcase what I had learned in my first year of front-end development studies.
 
